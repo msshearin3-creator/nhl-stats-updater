@@ -1,0 +1,5 @@
+{"data":[
+{"gamesPlayed":10,"satPct":0.59375,"satPctClose":0.59646,"savePct5v5":0.88823,"shootingPct5v5":0.08943,"shootingPlusSavePct5v5":0.97766,"teamFullName":"Carolina Hurricanes","teamId":12,"usatPct":0.60094,"zoneStartPct5v5":0.62007},
+{"gamesPlayed":8,"satPct":0.55454,"satPctClose":0.56504,"savePct5v5":0.87586,"shootingPct5v5":0.09146,"shootingPlusSavePct5v5":0.96732,"teamFullName":"Montréal Canadiens","teamId":8,"usatPct":0.55072,"zoneStartPct5v5":0.53807},
+{"gamesPlayed":10,"satPct":0.56759,"satPctClose":0.57734,"savePct5v5":0.89534,"shootingPct5v5":0.09829,"shootingPlusSavePct5v5":0.99363,"teamFullName":"Utah Mammoth","teamId":68,"usatPct":0.57296,"zoneStartPct5v5":0.50511}
+],"total":3}

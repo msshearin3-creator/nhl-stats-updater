@@ -1,0 +1,45 @@
+name: Update NHL stats
+
+on:
+  schedule:
+    # Times are UTC. 06:17 UTC is about 2am ET, after the late West Coast games.
+    # 11:47 UTC is about 7:45am ET, after the NHL stats feed catches up overnight.
+    - cron: "17 6 * * *"
+    - cron: "47 11 * * *"
+  workflow_dispatch: # adds a "Run workflow" button on the Actions tab
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-nhl-stats
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Pull NHL stats
+        run: python scripts/update_nhl.py
+
+      - name: Commit updated data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Update NHL stats $(TZ=America/New_York date '+%Y-%m-%d %H:%M') ET"
+            git push
+          fi

@@ -1,0 +1,5 @@
+{"data":[
+{"faceoffWinPct":0.5017,"gamesPlayed":10,"goalsAgainst":24,"goalsAgainstPerGame":2.4,"goalsFor":36,"goalsForPerGame":3.6,"penaltyKillPct":0.914286,"powerPlayPct":0.25641,"shotsAgainstPerGame":22.9,"shotsForPerGame":33.1,"teamFullName":"Carolina Hurricanes","teamId":12},
+{"faceoffWinPct":0.530916,"gamesPlayed":8,"goalsAgainst":30,"goalsAgainstPerGame":3.75,"goalsFor":25,"goalsForPerGame":3.125,"penaltyKillPct":0.82353,"powerPlayPct":0.148148,"shotsAgainstPerGame":25.875,"shotsForPerGame":29.125,"teamFullName":"Montréal Canadiens","teamId":8},
+{"faceoffWinPct":0.530017,"gamesPlayed":10,"goalsAgainst":31,"goalsAgainstPerGame":3.1,"goalsFor":38,"goalsForPerGame":3.8,"penaltyKillPct":0.6875,"powerPlayPct":0.361111,"shotsAgainstPerGame":22.5,"shotsForPerGame":30.1,"teamFullName":"Utah Mammoth","teamId":68}
+],"total":3}
